@@ -1,1 +1,53 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <span>{{ progress1 + '%' }}</span>
+                <div class="progress m-t-20">
+                    <div 
+                        class="progress-bar active bg-primary progress-bar-striped" 
+                        style="height:10px;"
+                        [style.width]="getProgress1"
+                    >
+                    </div>
+                </div>
+                <span>{{ progress2 + '%' }}</span>
+                <div class="progress m-t-20">
+                    <div 
+                        class="progress-bar active bg-danger progress-bar-striped" 
+                        style="height:10px;"
+                        [style.width]="getProgress2"
+                    >
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementer 
+                    [progress]="progress1"
+                    (onProgress)="progress1 = $event" 
+                ></app-incrementer>
+                    <!-- (onProgress)="getProgress( $event )" -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-12 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementer 
+                    [progress]="progress2" 
+                    (onProgress)="progress2 = $event" 
+                    [classBtn]="'btn-danger'"
+                ></app-incrementer>
+            </div>
+        </div>
+    </div>
+</div>
