@@ -13,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -23,7 +24,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     Grafica1Component,
     ProgressComponent,
     PagesComponent,
-    NopagefoundComponent
+    NopagefoundComponent,
+    AccountSettingsComponent
   ],
   exports: [
     PagesComponent,

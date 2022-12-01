@@ -4,7 +4,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   selector: 'app-incrementer',
   templateUrl: './incrementer.component.html',
   styles: [
-  ]
+  ],
+  
 })
 export class IncrementerComponent implements OnInit {
   
