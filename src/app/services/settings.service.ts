@@ -34,7 +34,6 @@ export class SettingsService {
 
       ( btnThemeUrl === currentTheme ) && elem.classList.add('working');
 
-
     });
     
   }
